@@ -2,19 +2,17 @@ const TIMEOUT = 5000;
 let start, end, timeout;
 
 window.addEventListener('mousemove', () => {
-    console.log('FIRST');
-    if (start) {
+    if(start) {
         end = new Date();
-        //
+        // TODO: subtract idle time from webtime
     }
-    if (timeout){
-        console.log('CLEARING TIMEOUT');
+    
+    if(timeout) {
         clearTimeout(timeout);
     }
 
     timeout = setTimeout(() => {
-        console.log('IDLE START');
-        
+        // TODO: send message to stop timer on the badge
         start = new Date();
     }, TIMEOUT);
 });
