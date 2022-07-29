@@ -95,9 +95,9 @@ body {
     color: var(--color-3);
 }
 
-.website-data:hover {
+/* .website-data:hover {
     color: var(--color-4);
-}
+} */
 
 .domain-part {
     display: flex;
